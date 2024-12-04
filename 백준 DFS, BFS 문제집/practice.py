@@ -1,3 +1,6 @@
-a = [1, 5,3]
-a.sort()
-print(a)
+a = 1
+b= 0
+b=a
+a+=2
+print(a, b)
+print(id(a), id(b))
