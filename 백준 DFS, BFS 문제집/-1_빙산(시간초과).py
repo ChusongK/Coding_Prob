@@ -35,19 +35,17 @@ while True:
 
     # 배열 복사
     narr = [x[:] for x in arr]
-    cnt1 = 0
-    is_end1 = False
+    cnt = 0
     # 배열 순회하면서 빙산 찾고, 찾으면 주변 0 개수 세서 narr에서 0 될때까지 빼기
     for i in range(1, N-1):
         for j in range(1, M-1):
-            if cnt1>10000:
-                is_end1 = True
-                break
-            if arr[i][j]!=0:  # 빙산 찾으면,
+            if arr[i][j]>0:  # 빙산 찾으면,
                 narr = search_n_subtract(i, j, arr, narr)
-                cnt1 += 1
-        if is_end1:
-            break
+                cnt += 1
+    if cnt==0:
+        print(0)
+        break
+
     # 배열 갱신
     arr = [x[:] for x in narr]
 
@@ -60,9 +58,7 @@ while True:
                 v = bfs(i, j, arr, v)
                 cnt2 += 1 # 한덩이 추가
 
-    if cnt2==0:  # 전부 다 녹아 있다면,
-        print(0)
-        break
-    elif cnt2>=2:
+    if cnt2>=2:
         print(t)
         break
+
