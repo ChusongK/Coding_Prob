@@ -1,6 +1,5 @@
-a = 1
-b= 0
-b=a
-a+=2
-print(a, b)
-print(id(a), id(b))
+for _ in range(2):
+    if 10<=50*20:
+        print("happy")
+        continue
+    print('hi')
