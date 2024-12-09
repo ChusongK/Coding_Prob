@@ -1,7 +1,7 @@
 # 블로그 링크
 # https://velog.io/@falling_star3/2.-%EA%B9%8A%EC%9D%B4%EC%9A%B0%EC%84%A0%ED%83%90%EC%83%89DFS%EA%B3%BC-%EB%84%93%EC%9D%B4%EC%9A%B0%EC%84%A0%ED%83%90%EC%83%89BFS
 import sys
-sys.stdin = open("../input.txt", "r")
+sys.stdin = open("input.txt", "r")
 
 N, M, V = map(int, input().split())
 
@@ -23,12 +23,6 @@ def dfs(V):
         if graph[V][i] and not visited1[i]:
             dfs(i)
 
-def dfs(V):
-    visited1[V] = 1
-    print(V, end = ' ')
-    for i in range(0, N+1):
-        if graph[V][i] and not visited1[i]:
-            dfs(i)
 
 def bfs(V):
     queue = [V]
