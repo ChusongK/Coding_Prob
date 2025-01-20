@@ -53,7 +53,6 @@ def count_icebergs():
             count += 1
     return count
 
-
 time = 0
 while ice_positions:
     time += 1
