@@ -1,3 +1,4 @@
+# https://bgspro.tistory.com/70
 import sys
 sys.stdin = open('input.txt', 'r')
 from collections import deque
