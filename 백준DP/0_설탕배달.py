@@ -16,3 +16,4 @@ if DP[N]<INF:
     print(DP[N])
 else:
     print(-1)
+print(DP[:20])
