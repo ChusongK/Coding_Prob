@@ -1,3 +1,4 @@
+# https://blog.naver.com/PostView.nhn?blogId=vjhh0712v&logNo=221470862600
 import sys
 sys.stdin = open('input.txt', 'r')
 
