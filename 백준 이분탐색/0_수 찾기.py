@@ -1,3 +1,4 @@
+# https://velog.io/@deannn/BOJ-%EB%B0%B1%EC%A4%80-1920%EB%B2%88-%EC%88%98-%EC%B0%BE%EA%B8%B0-Python
 import sys
 sys.stdin = open('input.txt', 'r')
 
