@@ -1,4 +1,4 @@
 import sys
 
-a = sys.maxsize
+a = -sys.maxsize
 print(a)
