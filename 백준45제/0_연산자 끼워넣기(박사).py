@@ -20,7 +20,11 @@ def dfs(n, sm, add, sub, mul, div):
     if mul>0:
         dfs(n+1, sm*lst[n], add, sub, mul-1, div)
     if div>0:
-        dfs(n+1, int(sm/lst[n]), add, sub, mul, div-1)
+        if sm<0:
+            dfs(n+1, -(abs(sm)//lst[n]), add, sub, mul, div-1)
+        else:
+            dfs(n+1, sm//lst[n], add, sub, mul, div-1)
+
 
 N = int(input())
 lst = list(map(int, input().split()))
