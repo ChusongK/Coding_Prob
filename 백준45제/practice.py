@@ -3,11 +3,10 @@ import sys
 sys.stdin = open('input.txt', 'r')
 
 
+from collections import deque
 
+q = deque()
+q.append((3, 3))
 
-N = int(input())
-arr = [list(map(int, input().split())) for _ in range(N)]
-ans = float('-inf')
-narr = list(map(list, zip(*arr)))
-for i in arr:
-    print(i)
+a, b = q[-1]
+print(a, b)
